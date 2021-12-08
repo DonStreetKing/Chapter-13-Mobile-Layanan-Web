@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         Tombol_Tambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, add_product.class);
+                Intent intent = new Intent(MainActivity.this, Add_Product.class);
                 StartActivity(intent);
             }
         });
