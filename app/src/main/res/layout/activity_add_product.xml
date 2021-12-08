@@ -6,4 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".Add_Product">
 
+    <TextView
+        android:id="@+id/TextView_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <TextView
+        android:id="@+id/textView_NamaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Item"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <TextView
+        android:id="@+id/TextVIew_Harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <EditText
+        android:id="@+id/editTextNamaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <EditText
+        android:id="@+id/editTextHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <Button
+        android:id="@+id/button_tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="224dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

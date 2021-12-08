@@ -23,10 +23,10 @@ public class Add_Product extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_product);
-        Tombol_Tambah = (Button) findViewById(R.id.Tombol_Tambah);
-        etID = (EditText) findViewById(R.id.ID);
-        etNamaItem = (EditText) findViewById(R.id.NamaItem);
-        etHarga = (EditText) findViewById(R.id.Harga);
+        Tombol_Tambah = (Button) findViewById(R.id.button_tambah);
+        etID = (EditText) findViewById(R.id.editTextID);
+        etNamaItem = (EditText) findViewById(R.id.editTextNamaItem);
+        etHarga = (EditText) findViewById(R.id.editTextHarga);
 
         Tombol_Tambah.setOnClickListener(new View.OnClickListener() {
             @Override
