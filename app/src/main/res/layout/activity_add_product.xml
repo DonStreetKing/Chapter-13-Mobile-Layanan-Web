@@ -10,25 +10,37 @@
         android:id="@+id/TextView_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ID"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="43dp" />
+        android:text="@string/id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextID"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/textView_NamaItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Item"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="97dp" />
+        android:text="@string/nama_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNamaItem"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
 
     <TextView
         android:id="@+id/TextVIew_Harga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Harga"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="156dp" />
+        android:text="@string/harga"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextHarga"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
 
     <EditText
         android:id="@+id/editTextID"
@@ -36,8 +48,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
 
     <EditText
         android:id="@+id/editTextNamaItem"
@@ -45,8 +61,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="88dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
 
     <EditText
         android:id="@+id/editTextHarga"
@@ -54,14 +74,21 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="143dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
 
     <Button
         android:id="@+id/button_tambah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tambah"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="224dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
 </androidx.constraintlayout.widget.ConstraintLayout>

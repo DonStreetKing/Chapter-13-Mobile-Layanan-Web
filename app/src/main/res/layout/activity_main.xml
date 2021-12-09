@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
@@ -15,7 +16,9 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="555dp"
+        android:layout_below="@id/Title"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="50dp" />
 
     <Button
@@ -23,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Add" />
+        android:text="@string/add" />
 
     <Button
         android:id="@+id/Tombol_Load"
@@ -32,6 +35,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
-        android:text="Load" />
+        android:text="@string/load" />
 
 </RelativeLayout>

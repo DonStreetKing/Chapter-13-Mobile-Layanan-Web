@@ -10,12 +10,12 @@ import android.widget.TextView;
 import java.util.List;
 
 public class ListViewAdapter extends ArrayAdapter<listitem> {
-    private List<listitem> productItemList;
+    private List<listitem> ProductItemList;
     private Context context;
 
     public ListViewAdapter(List<listitem> productItemList, Context context) {
         super(context, R.layout.list_item, productItemList);
-        this.productItemList = productItemList;
+        this.ProductItemList = productItemList;
         this.context = context;
     }
 
@@ -28,7 +28,7 @@ public class ListViewAdapter extends ArrayAdapter<listitem> {
         TextView textViewNamaItem = listViewItem.findViewById(R.id.textviewNamaItem);
         TextView textViewHarga = listViewItem.findViewById(R.id.textviewHarga);
 
-        listitem listItem = productItemList.get(position);
+        listitem listItem = ProductItemList.get(position);
 
         textVIewID.setText(listItem.getID());
         textViewNamaItem.setText(listItem.getNamaItem());
