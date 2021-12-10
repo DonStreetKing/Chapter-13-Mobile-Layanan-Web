@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Tombol_Tambah = findViewById(R.id.Tombol_Tambah);
         Tombol_Load = findViewById(R.id.Tombol_Load);
 
-        listView.setOnClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent(MainActivity.this, Detail_listitem.class);
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtras(data);
                 startActivity(intent);
             }
-        };
+        });
 
         Tombol_Load.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loaditem() {
-        final JsonArrayRequest jsonArrayRequest = JsonArrayRequest(Request.Method.GET, JSON_URL, null, new Response.Listener<JSONArray>() {
+        final JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, JSON_URL, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 try {
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                         ItemAPI = new listitem(
                                 jsonObject.getString("ID"),
                                 jsonObject.getString("NamaItem"),
-                                jsonObject.getString("Harga"),
+                                jsonObject.getString("Harga"));
                                 ProductItemList.add(ItemAPI);
                         }
                     final ListViewAdapter adapter = new ListViewAdapter(ProductItemList, getApplicationContext());

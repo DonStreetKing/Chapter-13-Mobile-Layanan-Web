@@ -32,11 +32,11 @@ public class Detail_listitem extends AppCompatActivity {
 
         Intent intent = getIntent();
         Bundle data = intent.getExtras();
-        String ID = data.getString("ID");
+        String id = data.getString("ID");
         String NamaItem = data.getString("NamaItem");
         String Harga = data.getString("Harga");
 
-        tvID.setText(ID);
+        tvID.setText(id);
         tvNamaItem.setText(NamaItem);
         tvHarga.setText(Harga);
         final String kode_ID = data.getString("ID");
@@ -49,7 +49,7 @@ public class Detail_listitem extends AppCompatActivity {
                 alertDialogBuilder.setPositiveButton("Si Senor", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
-                        ID = Kode_ID;
+                        ID = kode_ID;
                         DeleteProduct(ID);
                         startActivity(new Intent(Detail_listitem.this, MainActivity.class));
                         finish();
