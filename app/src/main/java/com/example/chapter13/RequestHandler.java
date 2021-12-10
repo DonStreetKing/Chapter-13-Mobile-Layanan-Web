@@ -15,7 +15,7 @@ import java.util.Map;
 import javax.net.ssl.HttpsURLConnection;
 
 class RequestHandler {
-    public String sendPostRequest(String requestURL, HashMap<String, String> postDataParams) throws UnsupportedEncodingException {
+    public String sendPostRequest(String requestURL, HashMap<String, String> postDataParams) {
         URL url;
         String response = "";
         try {
@@ -101,4 +101,5 @@ class RequestHandler {
             }
 
     }
+}
 }

@@ -51,7 +51,7 @@ public class Add_Product extends AppCompatActivity {
 
             @Override
             protected void onPostExecute(String s) {
-                super.onPostExecute();
+                super.onPostExecute(s);
                 if (etID.getText().toString().trim().length() == 0 || etNamaItem.getText().toString().trim().length() == 0 || etHarga.getText().toString().trim().length() == 0) {
                     Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
                 }
