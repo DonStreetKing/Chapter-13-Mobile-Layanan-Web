@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String JSON_URL = "https://api.donstreetking.online/get.php";
     public listitem ItemAPI;
     ListView listView;
-    private List<list> ProductItemList;
+    private List<listitem> ProductItemList;
     public String ID;
     Button Tombol_Tambah, Tombol_Load;
 
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         ProductItemList = new ArrayList<>();
         Tombol_Tambah = findViewById(R.id.Tombol_Tambah);
         Tombol_Load = findViewById(R.id.Tombol_Load);
+
         listView.setOnClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 data.putString("ID",posisi.getID());
                 data.putString("NamaItem",posisi.getNamaItem());
                 data.putString("Harga",posisi.getHarga());
-                intent.putExtra(data);
+                intent.putExtras(data);
                 startActivity(intent);
             }
         });
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(JSONArray response) {
                 try {
-                    Log.d("JSONArray",response.toString());
+                    Log.d("JsonArray",response.toString());
                     for (int i = 0; i < response.length(); i++) {
                         JSONObject jsonObject = response.getJSONObject(i);
 
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                                 jsonObject.getString("ID"),
                                 jsonObject.getString("NamaItem"),
                                 jsonObject.getString("Harga"),
-                                ProductItemList.add(ItemAPI));
+                                ProductItemList.add(ItemAPI);
                     }
                     final ListViewAdapter adapter = new ListViewAdapter(ProductItemList, getApplicationContext());
 
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
             @Override
                     public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT.show());
+                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
             }
             });
                 RequestQueue requestQueue = Volley.newRequestQueue(this);
