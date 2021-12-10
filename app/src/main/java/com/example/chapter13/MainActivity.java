@@ -110,9 +110,9 @@ public class MainActivity extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                 Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
             }
-            });
-                RequestQueue requestQueue = Volley.newRequestQueue(this);
-                requestQueue.add(jsonArrayRequest);
-                }
+        });
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(jsonArrayRequest);
+    }
 
-                    }
+}
