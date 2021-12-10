@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Add_Product.class);
-                StartActivity(intent);
+                startActivity(intent);
             }
         });
         loaditem();
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                                 jsonObject.getString("NamaItem"),
                                 jsonObject.getString("Harga"),
                                 ProductItemList.add(ItemAPI);
-                    }
+                        }
                     final ListViewAdapter adapter = new ListViewAdapter(ProductItemList, getApplicationContext());
 
                     listView.setAdapter(adapter);
