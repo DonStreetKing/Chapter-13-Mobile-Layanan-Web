@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtras(data);
                 startActivity(intent);
             }
-        });
+        };
 
         Tombol_Load.setOnClickListener(new View.OnClickListener() {
             @Override

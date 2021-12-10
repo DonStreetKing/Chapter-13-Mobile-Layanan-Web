@@ -58,8 +58,7 @@ public class Detail_listitem extends AppCompatActivity {
 
                 alertDialogBuilder.setNegativeButton("NYET!!", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
+                    public void onClick(DialogInterface arg0, int arg1) {
                     }
                 });
 
